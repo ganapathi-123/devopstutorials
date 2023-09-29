@@ -7,7 +7,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
-const version string = "v2"
+const version string = "v3"
 
 type Response struct {
 	Version string `json:"version"`

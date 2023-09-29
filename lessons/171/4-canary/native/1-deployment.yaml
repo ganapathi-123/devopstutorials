@@ -5,7 +5,7 @@ metadata:
   name: myapp
   namespace: default
 spec:
-  replicas: 0
+  replicas: 2
   selector:
     matchLabels:
       app: myapp
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: aputra/myapp-171:v1
+          image: docker4selva/myapp-1:v3
           ports:
             - name: http
               containerPort: 8181
